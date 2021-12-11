@@ -16,13 +16,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import com.fanketly.accompanist.TAG
 import com.fanketly.accompanist.theme.Blue200
 import com.google.accompanist.pager.ExperimentalPagerApi
 import com.google.accompanist.pager.HorizontalPager
 import com.google.accompanist.pager.rememberPagerState
 import kotlinx.coroutines.flow.collect
 
-const val TAG = "CalendarTAG"
 
 @OptIn(ExperimentalPagerApi::class)
 @Composable
