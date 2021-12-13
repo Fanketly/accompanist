@@ -20,9 +20,8 @@ allprojects {
         maven { url 'https://jitpack.io' }
     }
 }
-添加依赖项
-[![](https://jitpack.io/v/Fanketly/accompanist.svg)](https://jitpack.io/#Fanketly/accompanist)
 
+添加依赖项
 dependencies {
    implementation 'com.github.Fanketly:accompanist:0.151'
 }
