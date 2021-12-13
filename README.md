@@ -24,7 +24,7 @@ allprojects {
 [![](https://jitpack.io/v/Fanketly/accompanist.svg)](https://jitpack.io/#Fanketly/accompanist)
 
 dependencies {
-   implementation 'com.github.Fanketly:accompanist:Tag'
+   implementation 'com.github.Fanketly:accompanist:0.151'
 }
 
 
