@@ -1,9 +1,12 @@
 package com.example.wechat_compose
 
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.runtime.*
+import androidx.compose.ui.graphics.ImageBitmap
+import androidx.compose.ui.res.imageResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.wechat_compose.ui.theme.WeChat_ComposeTheme
@@ -20,12 +23,12 @@ class MainActivity : ComponentActivity() {
         setContent {
             WeChat_ComposeTheme {
                 val viewModel: MainViewModel = viewModel()
-
-                Calendar(selectDay = viewModel.selectDay, move = {
-                    viewModel.selectDay = 1
-                }) {
-                    viewModel.selectDay = it
-                }
+                Banner3D(R.drawable.background, R.drawable.mid, R.drawable.fore,false)
+//                Calendar(selectDay = viewModel.selectDay, move = {
+//                    viewModel.selectDay = 1
+//                }) {
+//                    viewModel.selectDay = it
+//                }
             }
         }
 
@@ -37,9 +40,16 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun DefaultPreview() {
     WeChat_ComposeTheme {
-        Banner3D(R.drawable.background, R.drawable.mid, R.drawable.fore)
-//        Banner3D(drawBack = {}, drawMid = {
-//            drawImage()
-//        }, drawFore = {})
+        Banner3D(R.drawable.background, R.drawable.mid, R.drawable.fore,false)
+//        val imageBack = ImageBitmap.imageResource(id = R.drawable.background)
+//        val imageMid = ImageBitmap.imageResource(id = R.drawable.mid)
+//        val imageFore = ImageBitmap.imageResource(id = R.drawable.fore)
+//        Banner3D(drawBack = {
+//            drawImage(imageBack)
+//        }, drawMid = {
+//            drawImage(imageMid)
+//        }, drawFore = {
+//            drawImage(imageFore)
+//        })
     }
 }
