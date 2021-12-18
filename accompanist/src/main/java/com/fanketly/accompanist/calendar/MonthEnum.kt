@@ -106,21 +106,6 @@ enum class MonthEnum {
         }
     }
 
-    fun maxLength(): Int {
-        return when (this) {
-            FEBRUARY -> 29
-            APRIL, JUNE, SEPTEMBER, NOVEMBER -> 30
-            else -> 31
-        }
-    }
-
-    fun minLength(): Int {
-        return when (this) {
-            FEBRUARY -> 28
-            APRIL, JUNE, SEPTEMBER, NOVEMBER -> 30
-            else -> 31
-        }
-    }
 
     fun length(leapYear: Boolean): Int {
         return when (this) {
