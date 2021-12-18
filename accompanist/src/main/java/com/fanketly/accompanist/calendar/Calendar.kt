@@ -39,7 +39,7 @@ private val weekList = listOf("一", "二", "三", "四", "五", "六", "日")
 @Composable
 fun Calendar(
     modifier: Modifier = Modifier
-        .height(200.dp),
+        .height(250.dp),
     onDateSelected: (year: Int, month: Int, dayOfMonth: Int) -> Unit
 ) {
     val date = Calendar.getInstance()
